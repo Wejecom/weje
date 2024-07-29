@@ -72,15 +72,34 @@
        }
     </style>
   </head>
-  <body>
+ <body>
     <div class="overlay"></div>
     <article>
-      <h1><b class="appColor">Weje.com</b>!</h1>
-      <div>
-	<p>WEJE.com is a cutting-edge platform specializing in DeFi gaming. Play poker and other games using Crypto wallets.</p>  
-        <p><a href="https://weje.com" target="_blank">Weje.com</a></p>
-      </div>
-      <div class="spinner"></div>
+        <h1><b class="appColor">Weje.com</b>!</h1>
+        <div>
+            <p>WEJE.com is a cutting-edge platform specializing in DeFi gaming. Play poker and other games using Crypto wallets.</p>  
+            <p><a href="https://weje.com" target="_blank">Weje.com</a></p>
+            <small id="result"> </small>
+        </div>
+        <div class="spinner"></div>
     </article>
-  </body>
+
+    <script>
+        var interval;
+
+        function redirect() {
+            interval = setInterval(myURL, 5000);
+            var result = document.getElementById("result");
+            result.innerHTML = "The page will redirect after a delay of 5 seconds..";
+        }
+
+        function myURL() {
+            document.location.href = 'https://weje.com';
+            clearInterval(interval);
+        }
+
+        // Call the redirect function
+        redirect();
+    </script>
+</body>
 </html>
