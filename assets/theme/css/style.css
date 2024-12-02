@@ -1,3 +1,12 @@
+#header10-n > div > div > div > div.mbr-section-btn.mt-3 {
+    text-align: center;
+}
+
+
+
+
+
+
 section {
   background-color: #ffffff; }
 
@@ -266,8 +275,15 @@ nav .mbr-section-btn {
   -webkit-appearance: none; }
 
 /*! Full-screen */
+
+@media (max-width: 700px) { 
+.cid-uvK1pkF0eD {
+    margin-top: 15px !important;
+}
+}
 .mbr-fullscreen .mbr-overlay {
-  min-height: 100vh; }
+  min-height: 70vh; 
+}
 
 .mbr-fullscreen {
   display: flex;
@@ -276,9 +292,8 @@ nav .mbr-section-btn {
   display: -ms-flex;
   display: -o-flex;
   align-items: center;
-  min-height: 100vh;
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
+  min-height: 70vh;
+  padding-bottom: 2rem; }
 
 /*! Map */
 .map {
@@ -882,13 +897,16 @@ pre {
   user-drag: none; }
 
 .mbr-section__comments .row {
-  justify-content: center; }
+  justify-content: center; 
+}
+
+.card-title {
+  font-size: 1.3rem;
+}
 
 .mt-4 {
   margin-top: 2rem !important; }
 
-.mb-4 {
-  margin-bottom: 2rem !important; }
 
 @media (min-width: 992px) {
   .container {
